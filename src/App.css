@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.lel{
+  height: 150px;
+  background-color: red;
+  border-radius: 50px;
+  margin: 25px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end{
+  height: 75px;
+  width: 250px;
+  background-color: yellow;
+  border-radius: 50px;
+  margin: 25px auto;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  border-top: 2px solid;
+}
