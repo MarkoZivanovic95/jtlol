@@ -7,10 +7,13 @@ class Main extends Component {
     }
     getText=(trel)=>{
         var asd=this.state.jtarray
-        if(asd.length==3){
-            asd.shift()
+        if(asd.length<3){
+            asd.push(trel)
+        }else if(asd.length==3){
+            asd.splice(-1)
+            asd.unshift(trel)
+
         }
-        asd.push(trel)
         console.log(asd)
         this.setState({jtarray:asd})
     }
@@ -22,7 +25,7 @@ class Main extends Component {
             )
             return (
                 <div className="App container">
-                    <div className="row">
+                    <div className="row styl">
                         <div className="col-3 lel" onClick={()=>this.getText("Zoli")}>Zoli</div>
                         <div className="col-3 lel" onClick={()=>this.getText("Ema")}>Ema</div>
                         <div className="col-3 lel" onClick={()=>this.getText("Dragomir")}>Dragomir</div>
